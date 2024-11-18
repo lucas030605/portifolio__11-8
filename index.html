@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio - Lucas Rodrigues</title>
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #19191b;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+        }
+
+        .interface {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: #d3c7c7;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #312c2c;
+            border-radius: 5px;
+        }
+
+        .btn-contato a button {
+            background-color: #61dafb;
+            border: none;
+            color: rgb(36, 33, 33);
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-contato a button:hover {
+            background-color: #21a1f1;
+        }
+
+        .topo-do-site {
+            padding: 60px 0;
+            background: url('imagem/fundo.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+
+        .topo-do-site h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .topo-do-site p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .especialidades {
+            padding: 60px 20px;
+            background-color: #19191b;
+        }
+
+        .titulo {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+
+        .especialidades .flex {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .especialidades-box {
+            background-color: #41363618;
+            border: 1px solid #dddddd6e;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .especialidades-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(39, 38, 38, 0.1);
+        }
+
+        .especialidades-box h3 {
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .especialidades-box p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .sobre {
+            padding: 60px 20px;
+            background-color: #2f2d31;
+        }
+
+        .sobre .flex {
+            display: flex;
+            align-items: center;
+        }
+
+        .img-sobre img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .txt-sobre {
+            max-width: 600px;
+            margin-left: 20px;
+        }
+
+        .txt-sobre h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .txt-sobre p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .especialidades .flex,
+            .sobre .flex {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .especialidades-box {
+                width: 100%;
+            }
+
+            .txt-sobre {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="IMAGEM/image-removebg-preview.png" alt="Logo">
+                </a>
+            </div>
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Especialidades</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Projetos</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <h1>Seja Bem Vindo ao meu <span>Portfólio!</span></h1>
+                <p>Aqui onde irei apresenta meus trabalhos ao longo da minha caminhada estudantil.</p>
+                <div class="btn-contato">
+                    <a href="#">
+                        <button>Entre em Contato</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="especialidades">
+            <div class="interface">
+                <h2 class="titulo">Minhas <span>Matérias.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <a href="Matematica.html"><h3>Matemática</h3></a>
+                        <p>Atividades de Matemática</p>
+                    </div>
+
+                    <div class="especialidades-box">
+                        <a href="Linguagens.html"><h3>Linguagens</h3></a>
+                        <p>Atividades de Linguagens</p>
+                    </div>
+
+                    <div class="especialidades-box">
+                        <a href="Humanas.html"><h3>Humanas</h3></a>
+                        <p>Atividades de Humanas</p>
+                    </div>
+
+                    <div class="especialidades-box">
+                        <a href="natureza.html"><h3>Natureza</h3></a>
+                        <p>Atividades de Natureza</p>
+                    </div>
+
+                    <div class="especialidades-box">
+                         <a href="tecnico.html"><h3>Técnico</h3></a>
+                        <p>Atividades do Técnico</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="foto.png" alt="Lucas Rodrigues">
+                    </div>
+                    
+                    <div class="txt-sobre">
+                        <h2>Olá, meu nome é <span>Lucas Rodrigues.</span></h2>
+                        <p>Estudo no SESI/SENAI, onde me dedico a diversas áreas de conhecimento, incluindo Matemática, Linguagens, Humanas, Natureza, e Técnico.Tenho 19 anos saci e fui criado em Florianopolis</p>
+                        <h3>Versão em inglês</h3>
+                        <p>I study at SESI/SENAI, where I am dedicated to various fields of knowledge, including Mathematics, Languages, Humanities, Natural Sciences, and Technical Studies. I'm 19 years old and was raised in Florianópolis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
